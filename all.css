@@ -56,6 +56,7 @@ img {
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 *, *::after, *::before {
@@ -273,4 +274,145 @@ body {
 
 .ml-10 {
   margin-left: 40px;
+}
+
+.mr-1 {
+  margin-right: 4px;
+}
+
+.mr-2 {
+  margin-right: 8px;
+}
+
+.mr-3 {
+  margin-right: 12px;
+}
+
+.mr-4 {
+  margin-right: 16px;
+}
+
+.mr-5 {
+  margin-right: 20px;
+}
+
+.mr-6 {
+  margin-right: 24px;
+}
+
+.mr-7 {
+  margin-right: 28px;
+}
+
+.mr-8 {
+  margin-right: 32px;
+}
+
+.mr-9 {
+  margin-right: 36px;
+}
+
+.mr-10 {
+  margin-right: 40px;
+}
+
+.mr-16 {
+  margin-right: 64px;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+@media (max-width: 992px) {
+  .container {
+    padding: 25px 36px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 16px 13px;
+  }
+}
+
+.df {
+  display: flex;
+}
+
+.header {
+  background-color: #AA0601;
+}
+.header .container {
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 414px) {
+  .header .container {
+    position: relative;
+  }
+}
+.header .container .logo {
+  background-image: url(/img/week3-4/logo-white.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 80px;
+  height: 49px;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.header .container .rwdBtn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+@media (max-width: 414px) {
+  .header .container .rwdBtn {
+    display: flex;
+  }
+}
+.header .container .rwdBtn span {
+  display: block;
+  height: 3px;
+  background-color: #FBF2F2;
+}
+@media (max-width: 414px) {
+  .header .container .navBar {
+    display: none;
+    background-color: #650300;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 414px) {
+  .header .container .navBar li {
+    margin: 0;
+  }
+}
+.header .container .navBar a {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #fff;
+}
+.header .container .navBar a:hover {
+  color: #FBF2F2;
+}
+@media (max-width: 414px) {
+  .header .container .navBar a {
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-block;
+    padding: 12px 64px;
+  }
+}
+.header .container .open {
+  display: flex;
 }/*# sourceMappingURL=all.css.map */

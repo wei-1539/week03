@@ -1,6 +1,29 @@
 @import "./sassMIxin/reset";
 @import "./sassMIxin/spacing";
+@import "./sassMIxin/grid";
 
 $primary : #AA0601;
-$light:#FBF2F2;
-$dark:#000000;
+$light: #FBF2F2;
+$dark: #000000;
+$txtLight: #fff;
+$darkRed: #650300;
+
+.container {
+    max-width: 1296px;
+    margin: 0 auto;
+    padding: 25px 0;
+
+    @include lg() {
+        padding: 25px 36px;
+    }
+    
+    @include md{
+        padding: 16px 13px;
+    }
+    
+}
+
+.df {
+    display: flex;
+}
+@import "./header"

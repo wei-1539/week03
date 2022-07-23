@@ -1,0 +1,71 @@
+.header {
+    background-color: $primary;
+    .container {
+        justify-content: space-between;
+        align-items: center;
+        @include xs {
+            position: relative;
+        }
+        .logo {
+            background-image: url(/img/week3-4/logo-white.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 80px;
+            height: 49px;
+            text-indent: 101%;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .rwdBtn {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 20px;
+            cursor: pointer;
+            @include xs {
+                display: flex;
+            }
+            span {
+                display: block;
+                height: 3px;
+                background-color: $light;
+            }
+        }
+        .navBar {
+            @include xs {
+                display: none;
+                background-color: $darkRed;
+                position: absolute;
+                right: 0;
+                top: 100%;
+                flex-direction: column;
+                text-align: center;
+            }
+            li {
+                @include xs {
+                    margin: 0;
+                }
+            }
+            a {
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: 400;
+                color: $txtLight;
+                &:hover {
+                    color: $light;
+                }
+                @include xs {
+                    font-size: 16px;
+                    line-height: 24px;
+                    display: inline-block;
+                    padding: 12px 64px;
+                }
+            }
+        }
+        // 漢堡開關
+        .open {
+            display: flex;
+        }
+    }
+}
