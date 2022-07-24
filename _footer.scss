@@ -1,0 +1,107 @@
+.footer {
+    background-color: $primary;
+    .container{
+        @include lg{
+            padding: 48px 36px 40px 36px;
+        }
+        @include md{
+            padding: 24px 14px 24px 13px;
+        }
+    }
+    .top {
+        
+        align-items: center;
+        flex-wrap: wrap;
+        border-bottom: 1px solid $light;
+
+        @include md{
+            flex-direction: row-reverse;
+            align-items: start;
+            justify-content: space-between;
+        }
+        .navBarFooter {
+            width: 50%;
+            @include lg{width: 70%;}
+            @include md{
+                display: none;
+            }
+            a {
+                color: $txtLight;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+                &:hover {
+                    color: $light;
+                }
+            }
+        }
+
+        .socialIC {
+            width: 50%;
+            justify-content: end;
+            @include lg{width: 30%;}
+            img {
+                width: 48px;
+                height: 48px;
+                @include lg{
+                    width: 40px;
+                    height: 40px;
+                }
+                @include md{
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+        .content {
+            
+
+            a {
+                color: $txtLight;
+                font-size: 36px;
+                line-height: 54px;
+                font-weight: 400;
+                &:hover {
+                    color: $light;
+                }
+                @include md{
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+
+    
+
+    .trademark {
+        justify-content: space-between;
+        align-items: center;
+        @include md{
+            flex-direction: column;
+            align-items: start;
+        }
+        li {
+            color: $txtLight;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            @include md{
+                flex-direction: column;
+            }
+            a{
+                color: $txtLight;
+                font-size: 14px;
+                line-height: 21px;
+                font-weight: 400;
+                &:hover{
+                    color:$light;
+                }
+                @include md{
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}

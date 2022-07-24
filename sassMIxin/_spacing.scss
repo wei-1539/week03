@@ -1,3 +1,5 @@
+@import "./grid";
+
 .pt-1{padding-top: 4px;}
 .pt-2{padding-top: 8px;}
 .pt-3{padding-top: 12px;}
@@ -65,4 +67,20 @@
 .mr-8{margin-right: 32px;}
 .mr-9{margin-right: 36px;}
 .mr-10{margin-right: 40px;}
+.mr-12{margin-right: 48px;}
 .mr-16{margin-right: 64px;}
+
+// rwd
+@include lg{
+    .mr-4-lg{margin-right: 16px;}
+}
+@include md{
+    .mr-2-md{margin-right: 8px;}
+    .mb-2-md{margin-bottom: 8px;}
+    .mb-4-md{margin-bottom: 16px;}
+    .mb-6-md{margin-bottom: 24px;}
+}
+// 特別尺寸
+@include md{
+    .mr-2-5-md{margin-right: 10px;}
+}
