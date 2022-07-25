@@ -381,7 +381,7 @@ body {
   }
 }
 .header .container .logo {
-  background-image: url(/img/week3-4/logo-white.png);
+  background-image: url(./img/week3-4/logo-white.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 80px;
